@@ -16,12 +16,13 @@ export default class Layout extends Component {
                 <span className="icon-bar"></span>
               </button>
               <Link className="navbar-brand" to="/wiki">wikistack</Link>
+              <Link className="navbar-brand" to="/wiki/add">write</Link>
             </div>
             <div id="nav-items" className="collapse navbar-collapse">
               <ul className="nav navbar-nav">
-                <li><a href="">index</a></li>
+                <li><Link to="">index</Link></li>
                 <li><Link to="/wiki/add">write</Link></li>
-                <li><a href="">users</a></li>
+                <li><Link to="/wiki/add">users</Link></li>
               </ul>
             </div>
           </div>

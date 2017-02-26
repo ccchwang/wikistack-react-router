@@ -18,7 +18,6 @@ router.get('/', function (req, res, next) {
 
 // POST /api/wiki
 router.post('/', function (req, res, next) {
-
   User.findOrCreate({
     where: {
       name: req.body.name,
@@ -74,6 +73,7 @@ router.get('/:urlTitle/delete', function (req, res, next) {
     }
   })
   .then(() => {
+    console.log('hisgs')
     res.status(204).end();
   })
   .catch(next);

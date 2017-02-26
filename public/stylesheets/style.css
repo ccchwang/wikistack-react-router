@@ -6,3 +6,11 @@ body {
 a {
     color: #00B7FF;
 }
+
+.danger {
+    border: 1px solid red;
+}
+
+small {
+    color: red;
+}
